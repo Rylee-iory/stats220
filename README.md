@@ -14,6 +14,9 @@ This is my repo for STATS 220.
 2. Analyse the meme
 3. Create my own meme
 
+A useful website for statistics is:
+
+[University of Auckland](https://www.auckland.ac.nz)
 A meme that captures how I currently feel about my university studies is:
 
 ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
