@@ -1,23 +1,35 @@
-# stats220
+# STATS 220 Project
 
-This is my repo for STATS 220.
+## About this repo
+
+This is my repo for **STATS 220** at the University of Auckland.
+
+---
 
 ## A little about me
 
-- I am undertaking a degree in bachelor of science.
+- I am undertaking a Bachelor of Science majoring in *Mathematics* and *Statistics*.
 - I am taking STATS 220 because I want to improve my coding and data skills.
 - I am interested in learning about **data analysis** and how statistics can be applied in *real life*.
 
-## What I will do in this project
+---
 
-1. Find a meme
-2. Analyse the meme
-3. Create my own meme
+## My goals for this course
 
-A useful website for statistics is:
+1. Learn how to create web pages using HTML  
+2. Learn how to use R for working with data and images  
+3. Develop skills in data technologies  
 
-[University of Auckland](https://www.auckland.ac.nz)
-A meme that captures how I currently feel about my university studies is:
+---
 
-![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
+## Useful link
 
+A useful website for this course is:
+
+[STATS 220 Canvas Page](https://canvas.auckland.ac.nz)
+
+---
+
+## A meme that represents my current study mood
+
+![study cat](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
