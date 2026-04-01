@@ -1,0 +1,86 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+```
+
+```{css}
+body {
+  background-color: #f8f9fa;
+}
+
+h1 {
+  color: #ff5470;
+  font-family: Arial;
+}
+
+p {
+  color: #333333;
+  background-color: #ffe4e1;
+  padding: 10px;
+  font-weight: bold;
+}
+
+```
+
+## Tracking Phone Use Patterns
+
+This dynamic report summarises my observations of phone use over time. 
+The data was collected through a simple form, focusing on how long the phone was used, the main activity, and whether the usage had a clear purpose. 
+
+By analysing this data, I aim to identify patterns in phone usage behaviour and compare how different activities and purposes relate to the amount of time spent on the phone.
+
+```{r}
+library(tidyverse)
+
+logged_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRnJ1vMcHVjJFKUIL4sHH_HXELf-HATASGe4N2tPIsy2l1EPVRWWMJB1366lz7e0c38Sf43m5wSx2BA/pub?gid=1914332814&single=true&output=csv")
+
+latest_data <- logged_data %>%
+  rename(
+    purpose = `Did you have a clear purpose for using your phone?`,
+    activity = `What was your main activity?`,
+    time = `Approximately how many minutes did you use your phone? Please round to the nearest 100 minutes.`
+  )
+#summary values
+mean_time <- mean(latest_data$time, na.rm = TRUE)
+max_time <- max(latest_data$time, na.rm = TRUE)
+
+```
+
+
+```{r}
+#bar charts 1
+ggplot(latest_data) +
+  geom_bar(aes(x = time, fill = activity), position = "dodge") +
+  labs(
+    title = "Phone Usage Time by Activity",
+    subtitle = "Comparing time spent across different activities",
+    x = "Time (minutes)",
+    y = "Number of users"
+  )
+```
+
+```{r}
+#bar charts 2
+ggplot(latest_data) +
+  geom_bar(aes(x = time, fill = purpose), position = "dodge") +
+  labs(
+    title = "Phone Usage Time by Purpose",
+    subtitle = "Comparing time spent by whether phone use had a clear purpose",
+    x = "Time (minutes)",
+    y = "Number of users"
+  )
+```
+
+The average phone use time was `r round(mean_time, 2)` minutes.
+
+The maximum phone use time was `r max_time` minutes.
+
+The chart 1 shows that most phone use is for entertainment, with higher usage times compared to other activities. 
+Study-related use is less frequent and usually occurs at shorter durations.
+
+The chart 2 shows that phone use without a clear purpose tends to occur over a wider range of time and can be longer. 
+In contrast, purposeful use is more concentrated at moderate time levels.
