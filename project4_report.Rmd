@@ -1,0 +1,45 @@
+---
+title: "Project 4 Report"
+author: "Luhan Rao"
+date: "2026-05-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+This project investigates phone usage habits using observational logging data collected over time. The focus of the data collection was to observe repeated instances of phone use behaviour, including screen time, main phone activities, phone usage purpose, and the time of day when phone use was highest. The aim of the project was to identify patterns and differences in phone usage behaviour across different situations.
+
+The data was collected using a Google Form. The questions included approximate screen time, whether the phone use had a clear purpose, the main activity performed on the phone, and the time of day associated with the highest phone usage. These questions were useful because they allowed both numerical and categorical data to be collected consistently across multiple observations.
+
+The data was collected individually through repeated observations over time. Recording multiple observations helped create a dataset that could be used to explore trends and compare behaviour across categories.
+
+When creating the visualisations, I focused on variables that clearly communicated phone usage patterns. I used bar charts to compare average values across categories because they are easy to interpret visually. I also used jitter plots and boxplots to display variation and distributions in screen time behaviour. Different chart types were selected to better match the structure of the data and improve readability.
+
+During the visualisation process, I experimented with different variable combinations and plot designs. Some earlier plots were difficult to interpret because labels overlapped or too much information was displayed at once. To improve clarity, I simplified labels, reordered categories, and selected chart types that better suited the dataset. I also used data processing functions such as mutate(), arrange(), group_by(), summarise(), and stringr functions to clean and prepare the data for visualisation.
+
+## Visual data story
+Visual data story link:
+
+[Insert GitHub Pages link here](Insert GitHub Pages link here)
+
+The visual data story demonstrates creativity through the use of customised CSS styling, colour themes, and visual layout design. Different chart types such as bar charts, jitter plots, and boxplots were used to create variety and improve visual communication throughout the webpage.
+
+The webpage was structured as a visual narrative to guide the reader through different aspects of phone usage behaviour. Section headings, spacing, and colour styling were used to improve readability and make the webpage more visually engaging. Additional creative elements, including an animated GIF and customised formatting, were included to make the story feel more interactive and less like a standard report.
+
+The visualisations were arranged to gradually introduce patterns in screen time behaviour, moving from overall comparisons to more detailed distributions and observations. This structure helped support the storytelling aspect of the webpage while keeping the information organised and easy to follow.
+
+## learning reflection
+Through this project, I improved my understanding of data visualisation and data storytelling using R and R Markdown. I learned how to clean and transform data using tidyverse functions and how to create different visualisations using ggplot2.
+
+One important thing I learned was that choosing an appropriate chart type is important for communicating information clearly. Different geoms can present different aspects of the data, such as comparisons, distributions, and variation. I also learned how CSS styling can improve the appearance of HTML webpages and make visualisations more engaging for readers.
+
+Another challenge during this project was troubleshooting errors in R and fixing issues related to timestamps, plotting, and file organisation. Solving these problems helped improve my confidence using RStudio and GitHub.
+
+Overall, this project helped me better understand how data visualisation can be used to communicate behavioural patterns effectively while also improving my technical skills in R programming and HTML reporting.
+##Appendix
+```{r file='data_visualisation.R', eval=FALSE, echo=TRUE}
+
+```
